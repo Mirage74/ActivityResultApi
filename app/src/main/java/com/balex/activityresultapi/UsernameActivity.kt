@@ -18,6 +18,7 @@ class UsernameActivity : AppCompatActivity() {
         initViews()
         saveUsernameButton.setOnClickListener {
             val username = usernameEditText.text.trim().toString()
+            //saveUsername2(username)
             saveUsername(username)
             finish()
         }
@@ -34,6 +35,13 @@ class UsernameActivity : AppCompatActivity() {
             setResult(RESULT_OK, this)
         }
     }
+
+//    private fun saveUsername2(username: String) {
+//        Intent().apply {
+//            putExtra(EXTRA_USERNAME, username + "3333")
+//            setResult(RESULT_OK, this)
+//        }
+//    }
 
     companion object {
 
